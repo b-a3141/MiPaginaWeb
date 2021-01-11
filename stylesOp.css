@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    /* background: black; */
+     color: white;
+     /*Patrón obtenido en https://www.heropatterns.com/ */
+      background-color: #d5dee7;
+ /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23c91a12' fill-opacity='0.2'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+ */
+ font-size: 16px;
+ font-family: 'Oswald', sans-serif;
+ 
+ }
+ a {
+     color: rgb(91, 141, 206);
+     text-decoration: none;
+ }
+ 
+ ul {
+     list-style: none;
+ }
+ 
+ .container{
+     width: 90%;
+     margin: auto;
+ }
+ 
+ /* Navigation  */ 
+ .nav-main {
+     font-size: 20px;
+     font-family: 'Oswald', sans-serif;
+     display: flex;
+     /* align-items: flex-start; */
+     height: 80px;
+     padding: 10px 5px;
+ }
+ 
+ /* Brand */
+ 
+ .brand{
+     height: 150px;
+     
+ }
+ 
+ 
+ .img-brand {
+    padding-top: 20px;
+     
+ }
+ 
+ 
+ .nav-main ul {
+     display: flex; 
+     }
+ 
+ .nav-main ul li {
+ padding-right: 30px;
+ padding-left: 30px;
+ }
+ 
+ .nav-main ul li a {
+     padding: 2px;
+ 
+ }
+ .nav-main ul li a:hover {
+     border-bottom: 2px solid white;
+ }
+ 
+ .nav-main ul.nav-menu {
+     display: inline-flex;
+     align-items: flex-start;
+     margin: auto;
+     height: 100px;
+ }
+ 
+ .Op1 {
+     background-color: #ff7f50;
+     height:500px;
+ }
+ 
+ .Op2 {
+    background-color: #ff7644;
+    height:500px;
+}
+
+.Op3 {
+    background-color: #fd6730;
+    height:500px;
+}
+
+ .btn-whatsapp {
+     display:block;
+     width:70px;
+     height:70px;
+     color: #fff;
+     position: absolute ; bottom: 60px; right: 2em;  
+     right:20px;
+     bottom:20px;
+     border-radius:50%;
+     line-height:80px;
+     text-align:center;
+     z-index:999;
+ }
+ 
+ /* News cards*/
+ .news-cards {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);/* tambien podría 1fr 1fr 1fr  */
+ gap: 25px;
+ margin: 10px;
+ font-size: 20px;
+  color: #090355;
+ }
+ 
+ .news-cards img{
+     width: 100%;
+     height: 280px;
+     }
+ 
+ .news-cards h3 {
+     font-size: 20px;
+     color: #090355;
+     margin: 10px 0;
+ }
+ 
+ .news-cards a {
+     padding: 10px 0;
+    
+     text-transform: uppercase;
+     display: inline-block;
+     font-weight: bold;
+ }
+ 
+ .news-cards a:hover {
+     text-decoration: underline;
+ }
+ 
+ 
+ /* social */
+ 
+ .social {
+     margin: 50px;
+     }
+ 
+ .social p {
+     font-size: 30px;
+     color: #262626;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ 
+ .links {
+     display: flex;
+     text-align: center;
+     justify-content: center;
+    
+ }
+ 
+ .links a {
+     margin: 0 30px;
+ }
+ 
+ .links a i {
+     font-size: 3rem;
+ }
+ 
+ /* footer-links */
+ 
+ .footer-links{
+     background: #2f3640;
+     color: #616161;
+     font-size: 12px;
+     padding: 35px 0;
+ }
+ .footer-container {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 10px;/*espaciado entre columnas*/
+     align-items: flex-start;
+     justify-content: center;
+ }
+ .footer-container ul {
+     margin: 0 auto;
+ }
+ .footer-container ul li {
+     line-height: 2.8; /* altura de cada fila */
+ }
+ 
+ /*footer*/
+ .footer {
+     background: #2f3640;
+     color: #616161;
+     font-size: 12px;
+     padding: 20px 0;
+     text-align: center;
+     padding-bottom: 20px;
+ }
+ 
+ /* Para que la pantalla se adapte a dispositivos móviles o tablets añado otras clases*/
+ /*max-width condiciona hasta ese límite para hacer lo que se indique*/
+ /*en la consola para desarrolladores se puede ir viendo como luce con distintos anchos*/
+ @media (max-width:700px ) {
+ 
+     
+ .nav-main ul.nav-menu {
+    font-size: 20px;
+      display: block; 
+     position: absolute; /*para que quede arriba de todo*/
+     top: 0px;
+     left: 0px;
+     background: #a6c5f1;
+     height: 10%;
+     padding: 2px;
+     opacity: .9;
+     transform: translateX(-10px); /*para desplazarlo en el eje X y que no se vea inicialmente */
+     transition: transform .5s ease-in-out; /*para que no aparezca brusco */
+ }
+ 
+ 
+ .nav-main ul.nav-menu li {
+     padding: 2px;
+     border-bottom: beige solid 1px;
+     font-size: 14px;
+ }
+ 
+ .news-cards {
+     grid-template-columns: repeat(2, 1fr);
+ }
+ 
+ }
+ 
+ .footer-links .footer-container {
+     grid-template-columns: repeat(2, 2fr);
+ }
+ 
+ @media (max-width:500px ) {
+    
+     .news-cards {
+         grid-template-columns:  1fr;
+     }
+     .news-cards img {
+         height: 150px;
+     }
+     
+ .footer-links .footer-container {
+     grid-template-columns: 1fr;
+ }
+ }

@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+   /* background: black; */
+    color: white;
+    /*Patrón obtenido en https://www.heropatterns.com/ */
+     background-color: #d5dee7;
+/* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23c91a12' fill-opacity='0.2'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+*/
+font-size: 16px;
+font-family: 'Oswald', sans-serif;
+
+}
+a {
+    color: rgb(91, 141, 206);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* Navigation  */ 
+.nav-main {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 20px 0;
+}
+
+/* Brand */
+
+.brand{
+    height: 150px;
+    
+}
+
+
+.img-brand {
+   padding-bottom: -50px;
+    
+}
+
+
+.nav-main ul {
+    display: flex; 
+    }
+
+.nav-main ul li {
+padding-right: 30px;
+padding-left: 30px;
+}
+
+.nav-main ul li a {
+    padding: 2px;
+
+}
+.nav-main ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav-main ul.nav-menu {
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+/* Swoucase */
+hr {
+    margin: 10px 0;
+}
+.showcase {
+    color:  #090355;
+    font-size: 40 px;
+    
+    width: 100%;
+    height: 500px;
+    background: url(img/netbook-google3.jpeg) no-repeat center center/cover;
+    padding: 50px 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.btn-whatsapp {
+    display:block;
+    width:70px;
+    height:70px;
+    color: #fff;
+    position: absolute ; top: 60px; right: 2em;  
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+}
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 0;
+}
+/* efecto al pasar con el puntero */
+.btn:hover{
+    opacity: .5;
+}
+
+.showcase h2,
+.showcase p
+{
+    margin-bottom: 10px;
+}
+
+/* News cards*/
+.news-cards {
+display: grid;
+grid-template-columns: repeat(3, 1fr);/* tambien podría 1fr 1fr 1fr  */
+gap: 25px;
+margin: 10px;
+font-size: 20px;
+ color: #090355;
+}
+
+.news-cards img{
+    width: 100%;
+    height: 280px;
+    }
+
+.news-cards h3 {
+    font-size: 20px;
+    color: #090355;
+    margin: 10px 0;
+}
+
+.news-cards a {
+    padding: 10px 0;
+   
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.news-cards a:hover {
+    text-decoration: underline;
+}
+
+
+/* social */
+
+.social {
+    margin: 50px;
+    }
+
+.social p {
+    font-size: 30px;
+    color: #262626;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+/* footer-links */
+
+.footer-links{
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;/*espaciado entre columnas*/
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer-container ul {
+    margin: 0 auto;
+}
+.footer-container ul li {
+    line-height: 2.8; /* altura de cada fila */
+}
+
+/*footer*/
+.footer {
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Para que la pantalla se adapte a dispositivos móviles o tablets añado otras clases*/
+/*max-width condiciona hasta ese límite para hacer lo que se indique*/
+/*en la consola para desarrolladores se puede ir viendo como luce con distintos anchos*/
+@media (max-width:700px ) {
+
+     
+.nav-main ul.nav-menu {
+    display: block;
+    position: absolute; /*para que quede arriba de todo*/
+    top: 0px;
+    left: 0px;
+    background: #2f3640;
+    height: 10%;
+    padding: 20px;
+    opacity: .9;
+    transform: translateX(-40px); /*para desplazarlo en el eje X y que no se vea inicialmente */
+    transition: transform .5s ease-in-out; /*para que no aparezca brusco */
+}
+
+.nav-main ul.nav-menu.show {
+    transform: translateX(-20px);
+}
+.nav-main ul.nav-menu-right {
+    margin: 50px;
+}
+.nav-main ul.nav-menu li {
+    padding: 20px;
+    border-bottom: beige solid 1px;
+    font-size: 14px;
+}
+
+.news-cards {
+    grid-template-columns: repeat(2, 1fr);
+}
+.cards-banner-one .content,
+.cards-banner-two .content
+ {
+    width: 80%;
+}
+}
+
+.footer-links .footer-container {
+    grid-template-columns: repeat(2, 2fr);
+}
+
+@media (max-width:500px ) {
+    .menu-btn{
+        display: block  ; /*para que no aparezca en pantalla grande*/
+    }
+    .news-cards {
+        grid-template-columns:  1fr;
+    }
+    .news-cards img {
+        height: 250px;
+    }
+    .cards-banner-one .content,
+.cards-banner-two .content
+ {
+    width: 100%;
+    padding: 60px 20px;
+}
+.footer-links .footer-container {
+    grid-template-columns: 1fr;
+}
+}
